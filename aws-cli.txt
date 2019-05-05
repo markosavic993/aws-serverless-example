@@ -1,0 +1,1 @@
+aws lambda create-function --region eu-central-1 --function-name SendFailureInformationToAdmin--zip-file fileb://sendfailureinfo/sendfailureinfo.zip --role arn:aws:iam::675043311651:role/lambda_publishToSnsRole  --handler send-failure-info.handler --runtime nodejs8.10 --timeout 15 --memory-size 512
